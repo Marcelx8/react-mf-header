@@ -4,10 +4,10 @@ import ReactDOM from "react-dom";
 import Header from "./Header";
 
 import "./index.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => (
   <div>
     <Header />
+    <div className="container">REMOTE</div>
   </div>
 );
 
