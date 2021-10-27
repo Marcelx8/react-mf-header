@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 const deps = require('./package.json').dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath: argv.mode === 'development' ? 'http://localhost:8080/' : '/',
+    publicPath: argv.mode === 'development' ? 'http://localhost:8080/' : 'https://react-mf-header.vercel.app/',
   },
 
   resolve: {
@@ -44,7 +44,8 @@ module.exports = (_, argv) => ({
       filename: 'remoteEntry.js',
       remotes: {},
       exposes: {
-        './Header': './src/Header'
+        './Header': './src/Header',
+        './DogWidget': './'
       },
       shared: {
         ...deps,
