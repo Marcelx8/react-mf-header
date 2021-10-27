@@ -45,7 +45,7 @@ module.exports = (_, argv) => ({
       remotes: {},
       exposes: {
         './Header': './src/Header',
-        './DogWidget': './'
+        './DogWidget': './src/DogWidget'
       },
       shared: {
         ...deps,
