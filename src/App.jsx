@@ -1,8 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import "./index.css";
+import Header from "./Header";
 
-const App = () => <div>Hi there, I'm React from Webpack 5.</div>;
+import "./index.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+const App = () => (
+  <div>
+    <Header />
+  </div>
+);
 
 ReactDOM.render(<App />, document.getElementById("app"));
