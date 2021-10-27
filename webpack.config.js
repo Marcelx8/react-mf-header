@@ -57,7 +57,8 @@ module.exports = (_, argv) => ({
           singleton: true,
           requiredVersion: deps['react-dom'],
         },
-      },
+        'react-bootstrap': deps['react-bootstrap']
+      }
     }),
     new HtmlWebPackPlugin({
       template: './src/index.html',
