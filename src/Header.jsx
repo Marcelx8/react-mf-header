@@ -1,16 +1,13 @@
 import React from 'react'
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
-function Header() {
+function HeaderWidget() {
 
   return (
     <div>
       <Navbar bg="secondary" variant="dark" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">My Header</Navbar.Brand>
+          <Navbar.Brand href="#home">Header Component</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -31,5 +28,5 @@ function Header() {
   )
 }
 
-export default Header
+export default HeaderWidget
 

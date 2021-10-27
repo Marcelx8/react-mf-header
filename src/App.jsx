@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Header from "./Header";
+import HeaderWidget from "./Header";
 import DogWidget from "./DogWidget";
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => (
   <div>
-    <Header />
+    <HeaderWidget />
     <br />
     <div className="container">
       <DogWidget />
